@@ -173,16 +173,16 @@ const controller = {
   },
   control(event) {
     switch (event.keyCode) {
-      case 1:
+      case 37:
         controller.moveLeft()
         break;
-      case 2:
+      case 38:
         controller.rotate()
         break;
-      case 3:
+      case 39:
         controller.moveRight()
         break;
-      case 4:
+      case 40:
         controller.moveDown()
         break;
     }
