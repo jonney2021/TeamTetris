@@ -1,0 +1,150 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 227);
+}
+
+.screen {
+  width: 300px;
+  height: 600px;
+  background-color: rgb(165, 219, 201);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.screen div {
+  height: 30px;
+  width: 30px; 
+}
+
+#container {
+  margin-top: 2vh;
+  border: rgb(165, 219, 201, 0.3) 7px solid;
+  display: flex;
+  border-radius: 2%;
+}
+
+.nextOne {
+  margin: 0px 50px 10px 50px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(144, 186, 144);
+  border: black 4px double;
+}
+
+.nextOne div {
+  height: 30px;
+  width: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  border: black 4px double;
+  padding: 10px 25px 10px 25px;
+}
+
+h3 {
+  border: black 4px double;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+}
+
+#startBtn {
+  position: relative;
+  background-color: rgb(191, 195, 197);
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 150px;
+  height: 75px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#startBtn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#startBtn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.intro {  
+  width: 75%;  
+}
+
+.keyBoard1 {
+  display: flex;
+  justify-content: center;  
+  margin-top: 10px;
+}
+
+.keyBoard2 {  
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px 5px 0px;
+}
+
+.keyBoard3 {  
+  display: flex;
+  justify-content: center;
+}
+
+.keyBoard3 div{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.keyBoard3 p {
+  margin-top: 5px;
+}
+
+.intro button {
+  height: 35px;
+  width: 35px;
+}
+
+@media (max-width: 768px) {
+  .info {
+    display: none;
+  }
+
+  .intro {    
+    justify-content: center;
+  }
+  
+  #container {
+    flex-direction: column;
+  }
+}

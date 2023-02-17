@@ -1,0 +1,61 @@
+<!-- Team Tetris 
+Members:
+  Chih-Yin Chen
+  Debora Correa Batista Bastos
+  Mackenzie Sawyer
+  Yeming Hu
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="screen"></div>
+    </div>
+
+    <div class="info">
+      <h2>NEXT</h2>
+      <div class="nextOne"></div>
+
+      <h3>Score: <span id="score">0</span></h3>
+      <button id="startBtn">Play</button>
+      <br />
+
+      <div class="intro">
+        <br />
+        <div class="keyBoard1">Rotate</div>
+        <div class="keyBoard2">
+          <button class="up">&uarr;</button>
+        </div>
+
+        <div class="keyBoard3">
+          <div>
+            <button class="left">&larr;</button>
+            <p>Left</p>
+          </div>
+          &nbsp;
+          <div>
+            <button class="down">&darr;</button>
+            <p>Down</p>
+          </div>
+          <div>
+            <button class="right">&rarr;</button>
+            <p>Right</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
