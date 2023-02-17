@@ -1,1 +1,169 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 227);
+}
+
+.grid {
+  width: 300px;
+  height: 600px;
+  background-color: rgb(165, 219, 201);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 30px;
+  width: 30px; 
+}
+
+#container {
+  margin-top: 2vh;
+  display: flex;
+}
+
+.tetromino {    
+  border: solid 3px;
+  border-color: white gray gray white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mini-grid {
+  margin: 0px 50px 10px 50px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(144, 186, 144);
+  border: black 4px double;
+}
+
+.mini-grid div {
+  height: 30px;
+  width: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  border: black 4px double;
+  padding: 10px 25px 10px 25px;
+}
+
+h3 {
+  border: black 4px double;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+}
+
+#start-button {
+  position: relative;
+  background-color: rgb(191, 195, 197);
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 150px;
+  height: 75px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#start-button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#start-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.intro {  
+  width: 75%;  
+}
+
+.keyBoard1 {
+  display: flex;
+  justify-content: center;  
+  margin-top: 10px;
+}
+
+.keyBoard2 {  
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px 5px 0px;
+}
+
+.keyBoard3 {  
+  display: flex;
+  justify-content: center;
+}
+
+.keyBoard3 div{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.keyBoard3 p {
+  margin-top: 5px;
+}
+
+.intro button {
+  height: 35px;
+  width: 35px;
+}
+
+.controller {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px 15px 10px;  
+}
+
+@media (max-width: 768px) {
+  .info {
+    display: none;
+  }
+
+  .intro {    
+    justify-content: center;
+  }
+  
+  #container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .controller {
+    display: none;
+  }
+}
