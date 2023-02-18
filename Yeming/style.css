@@ -1,3 +1,4 @@
+
 * {
   font-family: "Press Start 2P", cursive;
 }
@@ -45,8 +46,9 @@ body {
 }
 
 h2 {
+  font-size: 20px;
   border: black 4px double;
-  padding: 10px 25px;
+  padding: 3px 3px;
 }
 
 h3 {
