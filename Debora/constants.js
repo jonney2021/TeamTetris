@@ -28,14 +28,3 @@ const COLORS = [
 ];
 
 const tetromino = new Tetromino(shape, ctx);
-
-/*const COLORS = [
-  '#333333',
-  '#D962C5',
-  '#1DA1F2',
-  '#4BA672',
-  '#FFEC5C',
-  '#F36C4E',
-  '#9C99F2',
-  '#BD2A2E',
-];*/
