@@ -1,6 +1,6 @@
 // setting up the game
 
-let canvas = document.getElementById("gameboard") 
+let canvas = document.getElementById("GameBoard") 
 let scoreboard = document.getElementById("scoreboard") 
 let ctx = canvas.getContext("2d")
 
@@ -17,11 +17,11 @@ setInterval(() => {
 const newGameState = () => {
     checkScore();
 
-    // Spawn a new falling piece if there isn't one already
-    if (model.fallingPiece === null) {
+    // Spawn a new falling Tetromino  if there isn't one already
+    if (model.fallingTetromino === null) {
       const rand = Math.round(Math.random() * 6) + 1;
-      const newPiece = new Piece(SHAPES[rand], ctx);
-      model.fallingPiece = newPiece;
+      const newTetromino  = new Tetromino (SHAPES[rand], ctx);
+      model.fallingTetromino  = newTetromino ;
       model.moveDown();
     } else {
       model.moveDown();
