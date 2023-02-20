@@ -521,6 +521,3 @@ pause.addEventListener("click", function () {
   }
 });
 
-
-
-
