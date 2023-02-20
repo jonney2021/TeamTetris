@@ -9,7 +9,7 @@ body {
   background-color: rgb(245, 245, 227);
 }
 
-.screen {
+.grid {
   width: 300px;
   height: 600px;
   background-color: rgb(165, 219, 201);
@@ -17,29 +17,35 @@ body {
   flex-wrap: wrap;
 }
 
-.screen div {
+.grid div {
   height: 30px;
   width: 30px; 
 }
 
 #container {
   margin-top: 2vh;
-  border: rgb(165, 219, 201, 0.3) 7px solid;
   display: flex;
-  border-radius: 2%;
 }
 
-.nextOne {
+.tetromino {    
+  border: solid 3px;
+  border-color: white gray gray white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mini-grid {
   margin: 0px 50px 10px 50px;
   width: 150px;
-  height: 200px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(144, 186, 144);
   border: black 4px double;
 }
 
-.nextOne div {
+.mini-grid div {
   height: 30px;
   width: 30px;
 }
@@ -61,7 +67,7 @@ h3 {
   border-radius: 20px;
 }
 
-#startBtn {
+#start-button {
   position: relative;
   background-color: rgb(191, 195, 197);
   border: none;
@@ -78,7 +84,7 @@ h3 {
   margin-top: 15px;
 }
 
-#startBtn:after {
+#start-button:after {
   content: "";
   background: #f1f1f1;
   display: block;
@@ -91,7 +97,7 @@ h3 {
   transition: all 0.8s
 }
 
-#startBtn:active:after {
+#start-button:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
@@ -135,6 +141,13 @@ h3 {
   width: 35px;
 }
 
+.controller {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px 15px 10px;  
+}
+
 @media (max-width: 768px) {
   .info {
     display: none;
@@ -146,5 +159,11 @@ h3 {
   
   #container {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .controller {
+    display: none;
   }
 }
